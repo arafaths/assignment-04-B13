@@ -110,7 +110,9 @@ allCards.addEventListener('click', function (event) {
     badge.classList.remove('badge-neutral');
     badge.classList.add('badge-error', 'shadow-md');
 
-    calculateCound(); 
+    calculateCound();
+    
+    document.querySelector('.btn-primary').click();
   }
   if (event.target.closest('.btn-circle')) {
     interviewList = interviewList.filter(hello => hello !== card);
