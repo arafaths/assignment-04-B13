@@ -54,8 +54,9 @@ function updateEmpty(count) {
     const newDiv = document.createElement('div');
     if (!existingEmpty) { 
        newDiv.id = 'existing-empty';
-    newDiv.className = 'bg-white shadow-md p-10 rounded-xl text-center space-y-4';
+    newDiv.className = 'pb-12';
     newDiv.innerHTML = `
+    <div class="bg-white shadow-md p-10 rounded-xl text-center space-y-4">
     <div class="text-6xl text-blue-400">
           <i class="fa-solid fa-file-lines"></i>
         </div>
@@ -65,6 +66,7 @@ function updateEmpty(count) {
         <p class="text-gray-500">
           Check back soon for new job opportunities
         </p>
+    </div>
     `
     allCards.parentElement.appendChild(newDiv);
     };
