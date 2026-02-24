@@ -96,6 +96,8 @@ allCards.addEventListener('click', function (event) {
     badge.classList.add('badge-success', 'shadow-md');
 
     calculateCound(); 
+
+    document.querySelector('.btn-primary').click();
   }
   if (event.target.innerText === 'Rejected') {
     const badge = card.querySelector('.badge');
