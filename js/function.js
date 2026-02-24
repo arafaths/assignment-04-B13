@@ -117,6 +117,8 @@ allCards.addEventListener('click', function (event) {
     rejectetList = rejectetList.filter(hello => hello !== card);
     card.remove();
     calculateCound();
+
+    document.querySelector('.btn-primary').click();
   }
 });
 
