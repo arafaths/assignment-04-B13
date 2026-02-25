@@ -36,6 +36,16 @@ function toggleStyle(id) {
     };
   };
   const visibleCards = Array.from(allCards.children).filter(item => item.style.display !== 'none' && item.classList.contains('bg-white'));
+
+  const totalCount = allCards.children.length;
+const visibleCount = visibleCards.length;
+
+ if (id === 'all-btn') {
+  totalJobs.innerText = totalCount;
+ } else {
+  totalJobs.innerText = `${visibleCount} of ${totalCount}`;
+ }
+
   updateEmpty(visibleCards.length); 
 };
 
